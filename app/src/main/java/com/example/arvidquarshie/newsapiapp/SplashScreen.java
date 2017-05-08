@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import gr.net.maroulis.library.EasySplashScreen;
+
 public class SplashScreen extends AppCompatActivity {
 
     @Override
@@ -15,19 +17,19 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        Thread timerThread = new Thread() {
-            public void run() {
-                try {
-                    sleep(3000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } finally {
-                    Intent intent = new Intent(SplashScreen.this, MainActivity.class);
-                    startActivity(intent);
-                }
-            }
-        };
-        timerThread.start();
+ View easySplashScreenView = new EasySplashScreen(SplashScreen.this)
+                .withFullScreen()
+                .withTargetActivity(LauncherActivity.class)
+                .withSplashTimeOut(4000)
+                .withBackgroundResource(android.R.color.holo_red_light)
+                .withHeaderText("News Api Integration")
+                .withFooterText("Copyright 2017")
+                .withBeforeLogoText("Arvid Quarshie")
+                .withAfterLogoText("Welome")
+                .create();
+
+        setContentView(easySplashScreenView);
+
     }
 }
 

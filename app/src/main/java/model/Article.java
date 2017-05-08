@@ -1,4 +1,4 @@
-package com.example.arvidquarshie.newsapiapp;
+package model;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

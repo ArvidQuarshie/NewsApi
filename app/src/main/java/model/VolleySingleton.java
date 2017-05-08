@@ -1,4 +1,4 @@
-package com.example.arvidquarshie.newsapiapp;
+package model;
 
 import android.content.Context;
 
@@ -8,6 +8,9 @@ import com.android.volley.toolbox.Volley;
 
 /**
  * Created by arvid.quarshie on 5/7/2017.
+ * <p>
+ * A singleton for the VolleyLibrary , allows us to use it through out the project when
+ * using the volleyLibrary
  */
 
 public class VolleySingleton {
@@ -30,7 +33,7 @@ public class VolleySingleton {
         return requestQueue;
     }
 
-    public static synchronized  VolleySingleton getInstance(Context context) {
+    public static synchronized VolleySingleton getInstance(Context context) {
         if (mInstance == null) {
             mInstance = new VolleySingleton(context);
 
@@ -38,7 +41,7 @@ public class VolleySingleton {
         return mInstance;
     }
 
-    public <T> void addToRequestQueue(Request<T>request){
+    public <T> void addToRequestQueue(Request<T> request) {
         requestQueue.add(request);
 
     }

@@ -2,33 +2,33 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/background"
-    android:clickable="true"
     android:focusable="true"
-    android:layout_marginTop="5dp"
-    android:orientation="vertical"
-    android:paddingBottom="10dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:paddingTop="10dp">
+    android:paddingTop="10dp"
+    android:layout_marginTop="5dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="@drawable/background"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/title3"
+        android:textSize="13dp"
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_marginTop="17dp"
-        android:textSize="13dp"
-        android:textStyle="bold" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/description3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="2dp"
         android:layout_below="@+id/title3"
+        android:padding="2dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp" />
     <View
@@ -37,13 +37,6 @@
         android:background="#000000"/>
 
 
-    <!--<ImageView-->
-        <!--android:id="@+id/urlToImage"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="150dp"-->
-        <!--android:layout_alignParentLeft="true"-->
-        <!--android:layout_alignParentStart="true"-->
-        <!--android:layout_below="@+id/title"-->
-        <!--android:layout_marginTop="25dp" />-->
+
 
 </RelativeLayout>

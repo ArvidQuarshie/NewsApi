@@ -1,4 +1,4 @@
-package com.example.arvidquarshie.newsapiapp;
+package AsyncTasks;
 
 import android.os.AsyncTask;
 
