@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="android-smart-login-1.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/1b1f5ddd57691ce9450d9df16c13eaecec917af3/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/1b1f5ddd57691ce9450d9df16c13eaecec917af3/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/codelight.studios/android-smart-login/1.2/6d5a31a38662a4fde844c7fba57a584e4bfc8339/android-smart-login-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
